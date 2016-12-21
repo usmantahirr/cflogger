@@ -1,0 +1,30 @@
+{
+  "appenders": [
+    {
+      "type": "clustered",
+      "appenders": [
+        {
+          "type":"dateFile",
+          "filename":"logs/logs.log",
+          "pattern": "-yyyy-MM-dd",
+          "alwaysIncludePattern":false,
+          "category": "log"
+        },
+        {
+          "type":"dateFile",
+          "filename":"logs/error.log",
+          "pattern": "-yyyy-MM-dd",
+          "alwaysIncludePattern":false,
+          "category": "error"
+        },
+        {
+          "type":"dateFile",
+          "filename":"logs/warnings.log",
+          "pattern": "-yyyy-MM-dd",
+          "alwaysIncludePattern":false,
+          "category": "warn"
+        }
+      ]
+    }
+  ]
+}

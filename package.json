@@ -1,0 +1,31 @@
+{
+  "name": "cflogger",
+  "version": "0.0.1",
+  "description": "Logger using Log4js and DebugJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=*,-not_this,-nodemon:*,-nodemon nodemon example/index.js",
+    "start": "DEBUG=*,-not_this node example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmantahirr/cflogger.git"
+  },
+  "author": "Usman Tahir <ch.usman.tahir@gmail.com> (usmantahirr.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usmantahirr/cflogger/issues"
+  },
+  "homepage": "https://github.com/usmantahirr/cflogger#readme",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "debug": "^2.4.5",
+    "log4js": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}
