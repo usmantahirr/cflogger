@@ -48,6 +48,10 @@ class Logger {
     // this.fileLogger = configureFileLogger(module);
   }
 
+  debug(func) {
+    return createDebug(`${new Date().toUTCString()} [${this.module}][${func}] ${chalk.green.underline.bold('LOG')} `)
+  }
+
   log(message, calle) {
     this._print(message, calle, TYPE.LOG);
   }

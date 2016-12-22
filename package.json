@@ -1,6 +1,6 @@
 {
   "name": "cflogger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Logger using Log4js and DebugJS",
   "main": "index.js",
   "scripts": {
